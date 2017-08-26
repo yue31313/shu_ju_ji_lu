@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableRow_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:background="@drawable/layoutbg" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvNotNull_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_not_null"
+                    android:textColor="@color/red"
+                    android:textSize="22.0sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/label_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvHide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <Button
+                    android:id="@+id/button_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:background="@drawable/edit_text"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:textSize="18.0dip" />
+
+                <ImageButton
+                    android:id="@+id/buttonAdd_1"
+                    android:layout_width="46.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/button_1"
+                    android:layout_alignRight="@id/button_1"
+                    android:layout_alignTop="@id/button_1"
+                    android:background="@drawable/edit_text"
+                    android:src="@android:drawable/ic_menu_add" />
+            </RelativeLayout>
+        </LinearLayout>
+    </TableRow>
+
+</LinearLayout>

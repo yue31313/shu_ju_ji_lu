@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="transparent">#00000000</color>
+    <color name="label_text">#ff3f3f3f</color>
+    <color name="red">#ffff0000</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="btn_text">#ffffffff</color>
+    <color name="orange">#EE4000</color>
+    <color name="input_text">#000000</color>
+
+</resources>

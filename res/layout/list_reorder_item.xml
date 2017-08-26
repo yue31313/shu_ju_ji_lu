@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/list_bg_green"
+    android:gravity="center_vertical|center_horizontal"
+    android:ignoreGravity="@+id/icon"
+    android:paddingBottom="4dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+ 
+ <LinearLayout
+     android:id="@+id/LayImage"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentTop="true"
+     android:layout_marginRight="10dip"
+     android:background="@drawable/list_row_icon_bg_green"
+     android:gravity="center"
+     android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ListOrderImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cross" />
+
+    </LinearLayout><TextView
+        android:id="@+id/CharName"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="12dip"
+        android:layout_toLeftOf="@+id/icon"
+        android:layout_toRightOf="@+id/LayImage"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="名称"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true"
+        android:src="@drawable/grabber" />
+
+    <TextView
+        android:id="@+id/CharType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LayImage"
+        android:layout_alignLeft="@+id/CharName"
+        android:layout_below="@+id/CharName"
+        android:text="字符型 "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/CharColumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/CharName"
+        android:layout_below="@+id/CharName"
+        android:text="字段22"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+</RelativeLayout>

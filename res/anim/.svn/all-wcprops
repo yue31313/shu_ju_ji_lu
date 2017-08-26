@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 257
+/svn/DZ/!svn/ver/619/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C2.0/1%E5%B7%A5%E4%BD%9C%E5%8C%BA/1.2%E7%94%9F%E4%BA%A7%E7%B1%BB/Android%E7%89%88%E5%BC%80%E5%8F%91/4%E7%BC%96%E7%A0%81/SunYardMobileBank/res/anim
+END
+dialog_exit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 273
+/svn/DZ/!svn/ver/619/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C2.0/1%E5%B7%A5%E4%BD%9C%E5%8C%BA/1.2%E7%94%9F%E4%BA%A7%E7%B1%BB/Android%E7%89%88%E5%BC%80%E5%8F%91/4%E7%BC%96%E7%A0%81/SunYardMobileBank/res/anim/dialog_exit.xml
+END
+accelerate_interpolator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 285
+/svn/DZ/!svn/ver/619/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C2.0/1%E5%B7%A5%E4%BD%9C%E5%8C%BA/1.2%E7%94%9F%E4%BA%A7%E7%B1%BB/Android%E7%89%88%E5%BC%80%E5%8F%91/4%E7%BC%96%E7%A0%81/SunYardMobileBank/res/anim/accelerate_interpolator.xml
+END
+dialog_enter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 274
+/svn/DZ/!svn/ver/619/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C2.0/1%E5%B7%A5%E4%BD%9C%E5%8C%BA/1.2%E7%94%9F%E4%BA%A7%E7%B1%BB/Android%E7%89%88%E5%BC%80%E5%8F%91/4%E7%BC%96%E7%A0%81/SunYardMobileBank/res/anim/dialog_enter.xml
+END
+decelerate_interpolator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 285
+/svn/DZ/!svn/ver/619/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/%E6%89%8B%E6%9C%BA%E9%93%B6%E8%A1%8C2.0/1%E5%B7%A5%E4%BD%9C%E5%8C%BA/1.2%E7%94%9F%E4%BA%A7%E7%B1%BB/Android%E7%89%88%E5%BC%80%E5%8F%91/4%E7%BC%96%E7%A0%81/SunYardMobileBank/res/anim/decelerate_interpolator.xml
+END

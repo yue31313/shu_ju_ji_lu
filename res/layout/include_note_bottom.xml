@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/back"
+        android:gravity="right" >
+
+        <LinearLayout
+            android:id="@+id/layoutGetBack"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menu_selector_background"
+            android:focusable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_left" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/get_back"
+                android:textColor="@color/btn_text" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutGetNext"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menu_selector_background"
+            android:focusable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/get_next"
+                android:textColor="@color/btn_text" >
+            </TextView>
+        </LinearLayout>
+
+        
+
+        <LinearLayout
+            android:id="@+id/layoutOkNew"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menu_selector_background"
+            android:focusable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ok_new" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/save_new"
+                android:textColor="@color/btn_text" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutOk"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menu_selector_background"
+            android:focusable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ok" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView2"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/save"
+                android:textColor="@color/btn_text" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCancel"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menu_selector_background"
+            android:focusable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView3"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/cancel"
+                android:textColor="@color/btn_text" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

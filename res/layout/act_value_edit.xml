@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layValueEditMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_var_view"
+        layout="@layout/include_note_top" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/back"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="4.0dip"
+                android:background="@drawable/layoutbg" >
+
+                <TextView
+                    android:id="@+id/tvValueName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:text="@string/value_name"
+                    android:textColor="@color/label_text" />
+
+                <Button
+                    android:id="@+id/btnValueName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/input_text"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/btn_view"
+        layout="@layout/include_note_bottom" />
+
+</LinearLayout>

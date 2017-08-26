@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/back" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/title_logo" />
+
+        <ImageButton
+            android:id="@+id/imgBtnRight"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_btn_right"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/mm_title_btn_menu" />
+    </RelativeLayout>
+
+    <ptool.datacase.util.control.DragGridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_marginTop="4dip"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:listSelector="@drawable/grid_selector_bg"
+        android:numColumns="3"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:scrollbarStyle="outsideInset"
+        android:stretchMode="columnWidth" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="28dip"
+        android:background="@drawable/back"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/Shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_owner"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

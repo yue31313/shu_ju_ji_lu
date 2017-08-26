@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layCharEditMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_var_view"
+        layout="@layout/include_note_top" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/back"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:paddingBottom="12dip"
+                android:stretchColumns="1" >
+
+                <TableRow
+                    android:id="@+id/tableRowCharName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg" >
+
+                    <TextView
+                        android:id="@+id/tvCharName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_name"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/btnCharName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/input_text"
+                        android:textSize="18dp" >
+                    </Button>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg" >
+
+                    <TextView
+                        android:id="@+id/tvCharType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_type"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/btnCharType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/input_text"
+                        android:textSize="18dp" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnCharTypeId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+                    </Button>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharCanNull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg" >
+
+                    <TextView
+                        android:id="@+id/tvCharCanNull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_can_null"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" >
+
+                        <ToggleButton
+                            android:id="@+id/tbtnCharCanNull"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/checkbox"
+                            android:checked="false"
+                            android:ellipsize="none"
+                            android:textOff="@string/lable_no"
+                            android:textOn="@string/lable_yes"
+                            android:textSize="1dp" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharDecimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:tag="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tvCharDecimal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_decimal"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/btnCharDecimal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/input_text"
+                        android:textSize="18dp" >
+                    </Button>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:tag="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tvCharUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_unit"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/btnCharUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/input_text"
+                        android:textSize="18dp" >
+                    </Button>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharNeedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:tag="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tvCharNeedCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_need_count"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" >
+
+                        <ToggleButton
+                            android:id="@+id/tbtnCharNeedCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/checkbox"
+                            android:checked="false"
+                            android:ellipsize="none"
+                            android:textOff="@string/lable_no"
+                            android:textOn="@string/lable_yes"
+                            android:textSize="1dp" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharCountType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tvCharCountType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_count_type"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/btnCharCountType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/input_text"
+                        android:textSize="18dp" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnCharCountTypeId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+                    </Button>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharValues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:tag="5"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tvCharValues"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_values"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" >
+
+                        <Button
+                            android:id="@+id/btnCharValues"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_style"
+                            android:text="@string/char_values_open"
+                            android:textColor="@color/input_text"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharValuesMutli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:tag="5"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tvCharValuesMutli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_values_mutli"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" >
+
+                        <ToggleButton
+                            android:id="@+id/tbtnCharValuesMutli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/checkbox"
+                            android:checked="false"
+                            android:ellipsize="none"
+                            android:textOff="@string/lable_no"
+                            android:textOn="@string/lable_yes"
+                            android:textSize="1dp" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowFixValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_fix_value"
+                        android:textColor="@color/label_text" />
+
+                    <Button
+                        android:id="@+id/btnCharFixValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/input_text"
+                        android:textSize="18dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharHide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tvCharHide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_hide"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" >
+
+                        <ToggleButton
+                            android:id="@+id/tbtnCharHide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/checkbox"
+                            android:checked="false"
+                            android:ellipsize="none"
+                            android:textOff="@string/lable_no"
+                            android:textOn="@string/lable_yes"
+                            android:textSize="1dp" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharMathA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:tag="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tvCharMathA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_math_a"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/btnCharMathA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/input_text"
+                        android:textSize="18dp" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnCharMathAId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+                    </Button>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowCharMathB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:tag="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tvCharMathB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="@string/char_math_b"
+                        android:textColor="@color/label_text" >
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/btnCharMathB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/input_text"
+                        android:textSize="18dp" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnCharMathBId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+                    </Button>
+                </TableRow>
+
+                <LinearLayout
+                    android:id="@+id/layCharMathType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@drawable/layoutbg"
+                    android:orientation="vertical"
+                    android:tag="1"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tvCharMathType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/char_math_type"
+                            android:textColor="@color/label_text" />
+
+                        <Button
+                            android:id="@+id/btnCharMathType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/input_text"
+                            android:textSize="28dp" />
+
+                        <Button
+                            android:id="@+id/btnCharMathTypeId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvCharMathDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/back"
+        android:gravity="right" >
+
+        <LinearLayout
+            android:id="@+id/layout_blank"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menu_selector_background"
+            android:focusable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutManage"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menu_selector_background"
+            android:focusable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutOk"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menu_selector_background"
+            android:focusable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ok" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/save"
+                android:textColor="@color/btn_text" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCancel"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/menu_selector_background"
+            android:focusable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/cancel"
+                android:textColor="@color/btn_text" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

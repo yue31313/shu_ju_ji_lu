@@ -1,0 +1,78 @@
+# view res/layout/act_help_web.xml #generated:81
+-keep class android.webkit.WebView { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class ptool.datacase.AboutUsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class ptool.datacase.CaseTypeEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class ptool.datacase.CharEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class ptool.datacase.CharListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class ptool.datacase.DataListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class ptool.datacase.DataNoteActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class ptool.datacase.HelpWebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class ptool.datacase.LoadingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class ptool.datacase.LocusLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class ptool.datacase.LocusPasswordSetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class ptool.datacase.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class ptool.datacase.SysConfigActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class ptool.datacase.ValueEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class ptool.datacase.ValueListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class ptool.datacase.util.SystemConfig { <init>(...); }
+
+# view res/layout/act_main.xml #generated:34
+-keep class ptool.datacase.util.control.DragGridView { <init>(...); }
+
+# view res/layout/act_char_list.xml #generated:13
+-keep class ptool.datacase.util.control.DraggableListView { <init>(...); }
+
+# view res/layout/act_type_edit.xml #generated:106
+-keep class ptool.datacase.util.control.IconEditorView { <init>(...); }
+
+# view res/layout/widget_date_choice.xml #generated:17
+# view res/layout/widget_date_choice.xml #generated:23
+# view res/layout/widget_date_choice.xml #generated:29
+# view res/layout/widget_datetime_choice.xml #generated:32
+# view res/layout/widget_datetime_choice.xml #generated:38
+# view res/layout/widget_datetime_choice.xml #generated:55
+# view res/layout/widget_datetime_choice.xml #generated:61
+# view res/layout/widget_datetime_choice.xml #generated:67
+# view res/layout/widget_month_choice.xml #generated:17
+# view res/layout/widget_month_choice.xml #generated:23
+# view res/layout/widget_time_choice.xml #generated:14
+# view res/layout/widget_time_choice.xml #generated:20
+-keep class ptool.datacase.util.control.WheelView { <init>(...); }
+
+# view res/layout/act_locus_login.xml #generated:7
+# view res/layout/act_locus_password_set.xml #generated:27
+-keep class ptool.datacase.util.locus.LocusPassWordView { <init>(...); }
+
+# onClick res/layout/include_list_top.xml #generated:14
+-keepclassmembers class * { *** btn_back(...); }
+

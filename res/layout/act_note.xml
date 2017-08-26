@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layNoteMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_var_view"
+        layout="@layout/include_note_top" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/back"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:stretchColumns="1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/btn_view"
+        layout="@layout/include_note_bottom" />
+
+</LinearLayout>

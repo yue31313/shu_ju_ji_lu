@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="10dp" >
+
+    <GridView
+        android:id="@+id/gridSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_item_back"
+        android:columnWidth="68dip"
+        android:listSelector="@drawable/grid_selector_bg"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="6dp" >
+    </GridView>
+
+</LinearLayout>

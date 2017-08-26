@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dialogTopPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/dialogTitlePanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_marginTop="3.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/custom_progress_draw"
+                android:max="10000"
+                android:minHeight="30dip"
+                android:minWidth="30dip" />
+
+            <TextView
+                android:id="@+id/dialogTitle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5.0dip"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
